@@ -7,6 +7,8 @@ Where I implement sorting algorithms for fun and educational purposes!
   - Worst case: O(n^2)
   
 2. Insertion Sort
+  - Best case: O(n)
+  - Worst case: O(n^2)
 
 3. Merge Sort
 
