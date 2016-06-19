@@ -6,7 +6,7 @@
 //  Copyright © 2016 Sophia Nguyen. All rights reserved.
 //
 
-#include <iostream>
+#ifdef _SELECTIONSORT_H_
 
 void selectionSort(int arr[], int size) {
     for (int i = 0; i < size-1; i++) {   // Go through all values in array
@@ -27,18 +27,4 @@ void selectionSort(int arr[], int size) {
     }
 }
 
-int main(int argc, const char * argv[]) {
-    std::cout << "Here's an unsorted array!" << std::endl;
-    
-    int arr[] = {2,7,4,1,5,3};
-    for (int i = 0; i < 6; i++) {
-        std::cout << arr[i] << " ";
-    }
-    std::cout << "\nRunning selection sort..." << std::endl;
-    selectionSort(arr, 6);
-    for (int i = 0; i < 6; i++) {
-        std::cout << arr[i] << " ";
-    }
-    std::cout << "\n";
-    return 0;
-}
+#endif
