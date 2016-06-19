@@ -7,10 +7,11 @@
 //
 
 #include <iostream>
-#include "selectionsort.hpp"
+#include "sorttypes.h"
 
 
 int main() {
+    // Testing Selection Sort
     std::cout << "Here's an unsorted array!" << std::endl;
     
     int arr[] = {2,7,4,1,5,3};
@@ -21,6 +22,20 @@ int main() {
     selectionSort(arr, 6);
     for (int i = 0; i < 6; i++) {
         std::cout << arr[i] << " ";
+    }
+    std::cout << "\n";
+    
+    // Testing Insertion Sort
+    std::cout << "Here's another unsorted array!" << std::endl;
+    
+    int arr2[] = {6,3,1,0,8,8};
+    for (int i = 0; i < 6; i++) {
+        std::cout << arr2[i] << " ";
+    }
+    std::cout << "\nRunning insertion sort..." << std::endl;
+    insertionSort(arr2, 6);
+    for (int i = 0; i < 6; i++) {
+        std::cout << arr2[i] << " ";
     }
     std::cout << "\n";
     return 0;

@@ -6,7 +6,7 @@
 //  Copyright © 2016 Sophia Nguyen. All rights reserved.
 //
 
-#ifdef _SELECTIONSORT_H_
+#ifdef sorttypes_h
 
 void selectionSort(int arr[], int size) {
     for (int i = 0; i < size-1; i++) {   // Go through all values in array
