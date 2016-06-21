@@ -1,42 +1,27 @@
 //
 //  main.cpp
-//  All the Sorts
+//  All the Data Structures
 //
-//  Created by Sophia Nguyen on 2016-06-18.
+//  Created by Sophia Nguyen on 2016-06-19.
 //  Copyright © 2016 Sophia Nguyen. All rights reserved.
 //
 
 #include <iostream>
-#include "sorttypes.h"
+#include "datastructtypes.h"
 
-
-int main() {
-    // Testing Selection Sort
-    std::cout << "Here's an unsorted array!" << std::endl;
+int main(int argc, const char * argv[]) {
+    std::cout << "Testing out my sparkly, new stack...\n";
+    Stack testStack(5);
     
-    int arr[] = {2,7,4,1,5,3};
-    for (int i = 0; i < 6; i++) {
-        std::cout << arr[i] << " ";
-    }
-    std::cout << "\nRunning selection sort..." << std::endl;
-    selectionSort(arr, 6);
-    for (int i = 0; i < 6; i++) {
-        std::cout << arr[i] << " ";
-    }
-    std::cout << "\n";
+    testStack.Push(1);
+    testStack.Push(5);
+    testStack.Push(3);
+    testStack.Push(4);
+    int* testArray = testStack.get_Arr();
     
-    // Testing Insertion Sort
-    std::cout << "Here's another unsorted array!" << std::endl;
+    for (int i = 3; i >= 0; i--) {
+        std::cout << testArray[i] << endl;
+    }
     
-    int arr2[] = {6,3,1,0,8,8};
-    for (int i = 0; i < 6; i++) {
-        std::cout << arr2[i] << " ";
-    }
-    std::cout << "\nRunning insertion sort..." << std::endl;
-    insertionSort(arr2, 6);
-    for (int i = 0; i < 6; i++) {
-        std::cout << arr2[i] << " ";
-    }
-    std::cout << "\n";
     return 0;
 }
