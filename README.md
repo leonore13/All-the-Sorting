@@ -1,6 +1,6 @@
 # All-the-Sorting
 
-Where I implement sorting algorithms for fun and educational purposes!
+Where I implement sorting algorithms (for fun and educational purposes!)
 
 1. Selection Sort
   - Best case: O(n)
